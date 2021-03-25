@@ -35,7 +35,6 @@
   border: 1px solid #f57559;
   border-radius: 5px;
   background-color: white;
-  color: #f57559;
 }
 .btn_lg {
   background-color: #f57559;
@@ -49,6 +48,30 @@
   color: white;
   border-radius: 5px;
 }
+
+/* Bonus Dropdown Menu CSS */
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
 .text_right {
   text-align: right;
 }
@@ -70,13 +93,12 @@ nav {
   width: 100%;
   top: 0; */
 }
-#nav-top a:not(.btn),
-#nav-bottom a {
+#nav-top a:not(.btn) {
   text-decoration: none;
   color: #32495b;
   font-weight: 400;
   font-size: 15px;
-  padding: 0.5rem;
+  padding: 10px 20px;
 }
 #nav-top .col_2 img {
   width: 15px;
@@ -99,6 +121,15 @@ nav {
   padding-top: 15px;
 }
 
+#nav-bottom li {
+  list-style: none;
+  display: inline-block;
+}
+#nav-bottom a {
+  text-decoration: none;
+  color: #32495b;
+  padding: 0 0.5rem;
+}
 /* Jumbotron-CSS */
 
 .jumbotron {
