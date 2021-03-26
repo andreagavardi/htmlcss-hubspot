@@ -9,6 +9,22 @@ body {
   min-width: 1300px;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+  font-weight: 900;
+  font-size: 2.75rem;
+  font-family: "Montserrat";
+}
+h3 {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+h4 {
+  text-transform: uppercase;
+  color: #32495b;
+  margin-bottom: 20px;
+}
 p {
   margin: 2rem 0;
   color: #32495b;
@@ -176,11 +192,6 @@ img.search_icon {
   top: 70px;
   width: 36%;
 }
-.jumbotron_text h1 {
-  font-weight: 900;
-  font-size: 2.75rem;
-  font-family: "Montserrat";
-}
 
 .jumbotron .container {
   height: 100%;
@@ -198,10 +209,16 @@ img.search_icon {
 /**************
 Main-CSS
 **************/
-/* prima sezione */
 
-.powerfull {
+/******
+ prima sezione card
+ *****/
+
+.cubo {
   background-color: #f4f9fd;
+}
+.cubo .container {
+  margin-bottom: 40px;
 }
 
 .main_text {
@@ -213,11 +230,12 @@ Main-CSS
 }
 
 .main_text h2 {
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 1.5rem;
   font-family: "Montserrat";
 }
-/* prima sezione card  */
+
+/*card*/
 
 .card {
   float: left;
@@ -236,11 +254,11 @@ Main-CSS
 .row_top .card_content {
   float: left;
 }
-.powerfull .row_top > .card > .card_content:first-child {
+.cubo .row_top > .card > .card_content:first-child {
   padding-top: 5%;
   width: 30%;
 }
-.powerfull .row_top > .card > .card_content:last-child {
+.cubo .row_top > .card > .card_content:last-child {
   padding: 5%;
   width: 70%;
 }
@@ -258,19 +276,7 @@ Main-CSS
   width: 140px;
   line-height: 2rem;
 }
-h3 {
-  padding-top: 20px;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-family: "Montserrat";
-}
 
-.row_top .card_content h4,
-.row_bottom h4 {
-  text-transform: uppercase;
-  color: #32495b;
-  margin-bottom: 20px;
-}
 .row_top .card_content h4::after,
 .row_bottom .card h4::before {
   content: "";
@@ -329,4 +335,37 @@ h3 {
   list-style: none;
   padding-right: 15px;
   padding-top: 5px;
+}
+
+/*****
+sezione sfondo blu
+*****/
+.blu {
+  height: 600px;
+  background-color: #44b5ad;
+}
+.blu .main_text {
+  padding: 40px 0;
+}
+.blu .main_text,
+.blu p,
+.blu h2,
+.blu span {
+  color: white;
+}
+.col_4 {
+  text-align: center;
+  border: 1px solid white;
+  float: left;
+  width: calc(100% / 4);
+  padding: 15px 0;
+}
+.col_4 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 15px 0;
+  line-height: 2.25rem;
+}
+.col_4 span {
+  font-size: 12px;
 }
