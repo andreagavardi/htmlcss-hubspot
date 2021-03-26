@@ -341,7 +341,6 @@ Main-CSS
 sezione sfondo blu
 *****/
 .blu {
-  height: 600px;
   background-color: #44b5ad;
 }
 .blu .main_text {
@@ -355,10 +354,13 @@ sezione sfondo blu
 }
 .col_4 {
   text-align: center;
-  border: 1px solid white;
   float: left;
   width: calc(100% / 4);
   padding: 15px 0;
+}
+.col_4 img {
+  height: 25px;
+  width: 80px;
 }
 .col_4 h2 {
   font-family: "Montserrat", sans-serif;
@@ -368,4 +370,17 @@ sezione sfondo blu
 }
 .col_4 span {
   font-size: 12px;
+}
+.blu .row_top .col_4 {
+  border-bottom: 1px solid white;
+}
+
+.blu .row_top .col_4:nth-child(2),
+.blu .row_bottom .col_4:nth-child(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.blu .row_top .col_4:nth-child(3),
+.blu .row_bottom .col_4:nth-child(3) {
+  border-right: 1px solid white;
 }
