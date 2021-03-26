@@ -38,6 +38,7 @@ p {
   width: 50%;
 }
 .btn {
+  text-decoration: none;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -197,6 +198,7 @@ img.search_icon {
 /**************
 Main-CSS
 **************/
+/* prima sezione */
 
 .powerfull {
   height: 800px;
@@ -216,21 +218,85 @@ Main-CSS
   font-size: 2rem;
   font-family: "Montserrat";
 }
+/* prima sezione card  */
+
 .card {
   float: left;
   background-color: white;
   box-shadow: 0 0 2px 1px #7977776e;
   border-radius: 5px;
-  height: 30vh;
+  /* height: 30vh; */
   width: 50px;
 }
+
+/* riga superiore */
 .row_top .card {
   width: 100%;
   margin-bottom: 40px;
 }
+.powerfull .row_top > .card > .card_content:first-child {
+  padding-top: 5%;
+  width: 30%;
+}
+.powerfull .row_top > .card > .card_content:last-child {
+  padding: 5%;
+  width: 70%;
+}
+.row_top img,
+.row_top .btn {
+  display: block;
+  margin: 10% auto;
+  text-align: center;
+  width: 50%;
+  line-height: 2.25rem;
+}
+h3 {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+.row_top .card_content h4 {
+  text-transform: uppercase;
+  color: #32495b;
+  margin-bottom: 20px;
+}
+.row_top .card_content h4::after {
+  margin-left: 70px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background-color: #32495b;
+  width: 60%;
+}
+.row_top .card_content > ul > li {
+  color: #32495b;
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+.row_top .card_content > ul > li::before {
+  color: white;
+  background-color: #f57559;
+  line-height: 14px;
+  height: 14px;
+  content: " \2713";
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* riga inferiore */
+
 .row_bottom .card {
   width: calc(100% / 3 - 40px / 3);
 }
 .row_bottom .card:nth-child(2) {
   margin: 0 20px;
+}
+.row_top .card_content {
+  float: left;
 }
