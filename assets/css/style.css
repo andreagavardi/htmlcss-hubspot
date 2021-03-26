@@ -3,8 +3,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
+body {
+  min-width: 1400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility-rules */
+
 .clearfix::after {
   content: "";
   display: table;
@@ -24,32 +31,34 @@
   width: 50%;
 }
 .btn {
-  padding: 10px 10px;
-  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn_red {
   background-color: #f57559;
   color: white;
-  border-radius: 5px;
 }
 
 .btn_empty {
   border: 1px solid #f57559;
   border-radius: 5px;
   background-color: white;
+  color: #32495b;
+  padding: 10px;
 }
 .btn_lg {
-  background-color: #f57559;
+  font-size: 1.15rem;
   font-weight: 600;
-  line-height: 3.5rem;
-  width: 210px;
+  line-height: 2.5rem;
+  width: 180px;
   display: inline-block;
-  height: 60px;
   text-align: center;
   text-decoration: none;
-  color: white;
-  border-radius: 5px;
 }
 
 /* Bonus Dropdown Menu CSS */
+
 .dropdown {
   display: inline-block;
 }
@@ -84,6 +93,9 @@
 nav {
   line-height: 70px;
 }
+nav a {
+  text-decoration: none;
+}
 
 #nav-top {
   background-color: #f4f9fd;
@@ -98,27 +110,31 @@ nav {
   color: #32495b;
   font-weight: 400;
   font-size: 15px;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 #nav-top .col_2 img {
   width: 15px;
   height: 15px;
 }
 
+img.search_icon {
+  margin-right: 20px;
+}
+
 #globe {
-  /* background-color: black; */
   filter: invert(100%);
 }
 #nav-top .fa-angle-down {
   border-right: 1px solid #32495b;
-  padding-right: 15px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 /* navar bottom-CSS */
 
 #nav-bottom img {
   width: 20%;
-  padding-top: 15px;
+  vertical-align: middle;
 }
 
 #nav-bottom li {
@@ -129,27 +145,44 @@ nav {
   text-decoration: none;
   color: #32495b;
   padding: 0 0.5rem;
+  font-size: 15px;
 }
 /* Jumbotron-CSS */
 
 .jumbotron {
-  height: 610px;
+  height: 700px;
   background-image: url(../img/jumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 85%;
   position: relative;
 }
 .jumbotron_text {
   position: absolute;
   top: 70px;
-  width: 40%;
+  width: 36%;
 }
 .jumbotron_text h1 {
-  font-size: 2.5rem;
+  font-weight: 900;
+  font-size: 2.75rem;
+  font-family: "Montserrat";
 }
 .jumbotron_text p {
   margin: 2rem 0;
   color: #32495b;
   font-weight: 600;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  font-size: 15px;
+}
+.jumbotron .container {
+  height: 100%;
+}
+.banner {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #afebe4;
+  border-top: 3px solid #32495b;
+  border-bottom: 3px solid #32495b;
 }
