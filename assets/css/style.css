@@ -6,15 +6,15 @@
   /* font-family: "Montserrat", sans-serif; */
 }
 body {
-  min-width: 1400px;
+  min-width: 1300px;
   font-family: Arial, Helvetica, sans-serif;
 }
 p {
   margin: 2rem 0;
   color: #32495b;
   font-weight: 600;
-  line-height: 2rem;
-  font-size: 15px;
+  line-height: 1.5rem;
+  font-size: 14px;
 }
 
 /* Utility-rules */
@@ -164,7 +164,7 @@ img.search_icon {
 /* Jumbotron-CSS */
 
 .jumbotron {
-  height: 700px;
+  height: 650px;
   background-image: url(../img/jumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +188,7 @@ img.search_icon {
 .banner {
   position: absolute;
   bottom: 0;
-  height: 60px;
+  height: 75px;
   width: 100%;
   background-color: #afebe4;
   border-top: 3px solid #32495b;
@@ -201,7 +201,6 @@ Main-CSS
 /* prima sezione */
 
 .powerfull {
-  height: 800px;
   background-color: #f4f9fd;
 }
 
@@ -234,6 +233,9 @@ Main-CSS
   width: 100%;
   margin-bottom: 40px;
 }
+.row_top .card_content {
+  float: left;
+}
 .powerfull .row_top > .card > .card_content:first-child {
   padding-top: 5%;
   width: 30%;
@@ -242,13 +244,19 @@ Main-CSS
   padding: 5%;
   width: 70%;
 }
-.row_top img,
-.row_top .btn {
+.row_top img {
   display: block;
   margin: 10% auto;
   text-align: center;
   width: 50%;
-  line-height: 2.25rem;
+}
+.row_top .btn,
+.row_bottom .card .btn {
+  display: block;
+  margin: 10% auto;
+  text-align: center;
+  width: 140px;
+  line-height: 2rem;
 }
 h3 {
   padding-top: 20px;
@@ -257,33 +265,38 @@ h3 {
   font-family: "Montserrat";
 }
 
-.row_top .card_content h4 {
+.row_top .card_content h4,
+.row_bottom h4 {
   text-transform: uppercase;
   color: #32495b;
   margin-bottom: 20px;
 }
-.row_top .card_content h4::after {
-  margin-left: 70px;
+.row_top .card_content h4::after,
+.row_bottom .card h4::before {
   content: "";
   display: inline-block;
-  height: 2px;
+  height: 1px;
   background-color: #32495b;
-  width: 60%;
 }
+.row_top .card_content h4::after {
+  width: 330px;
+  margin-left: 70px;
+}
+
 .row_top .card_content > ul > li {
   color: #32495b;
   list-style: none;
   display: inline-block;
   padding-right: 15px;
 }
-.row_top .card_content > ul > li::before {
+.row_top .card_content > ul > li::before,
+.row_bottom .card > ul > li::before {
   color: white;
   background-color: #f57559;
   line-height: 14px;
   height: 14px;
   content: " \2713";
   display: inline-block;
-  border: 1px solid black;
   border-radius: 50%;
   text-align: center;
   margin-right: 15px;
@@ -292,11 +305,28 @@ h3 {
 /* riga inferiore */
 
 .row_bottom .card {
-  width: calc(100% / 3 - 40px / 3);
+  text-align: center;
+  width: calc(100% / 3 - 80px / 3);
+  padding: 30px;
 }
 .row_bottom .card:nth-child(2) {
-  margin: 0 20px;
+  margin: 0 40px;
 }
-.row_top .card_content {
-  float: left;
+.row_bottom .card > img {
+  width: 100px;
+  height: 100px;
+}
+.row_bottom .card h4::before {
+  width: 100%;
+  margin: 15% 0;
+}
+.row_bottom .card > ul {
+  margin-bottom: 40px;
+}
+.row_bottom .card > ul > li {
+  text-align: justify;
+  color: #32495b;
+  list-style: none;
+  padding-right: 15px;
+  padding-top: 5px;
 }
