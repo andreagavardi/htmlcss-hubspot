@@ -13,6 +13,10 @@ h1 {
   font-weight: 900;
   font-size: 2.75rem;
 }
+h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
 h3 {
   padding-top: 20px;
   font-weight: 600;
@@ -45,8 +49,8 @@ p {
 }
 
 .container_sm {
-  width: 60%;
-  margin: auto;
+  width: 57%;
+  margin: 40px auto;
 }
 .col_2 {
   float: left;
@@ -110,7 +114,7 @@ p {
 }
 .dropdown-content a {
   display: block;
-  text-align: left;
+  text-align: center;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -204,9 +208,6 @@ img.search_icon {
   width: 36%;
 }
 
-.jumbotron .container {
-  height: 100%;
-}
 .banner {
   position: absolute;
   bottom: 0;
@@ -232,18 +233,12 @@ Main-CSS
   margin-bottom: 40px;
 }
 
-.main_text {
+.cubo .main_text {
   text-align: center;
   padding: 60px 150px;
 }
 .main_text img {
   width: 35%;
-}
-
-.main_text h2 {
-  font-weight: 800;
-  font-size: 1.5rem;
-  font-family: "Montserrat";
 }
 
 /*card*/
@@ -357,6 +352,7 @@ sezione sfondo blu
   padding-bottom: 50px;
 }
 .blu .main_text {
+  text-align: center;
   padding: 40px 0;
 }
 .blu .main_text,
@@ -404,15 +400,6 @@ sezione sfondo blu
 sezione finale
 ******/
 
-.bottom .container_sm {
-  height: 200px;
-  margin-top: 40px;
-}
-.bottom .container {
-  background-color: red;
-  height: 300px;
-}
-
 .bottom .col_right {
   height: 100%;
   padding-left: 15%;
@@ -429,4 +416,14 @@ sezione finale
   max-width: 100%;
   vertical-align: middle;
   padding-left: 20px;
+}
+.bottom .main_text {
+  padding-top: 40px;
+}
+.bottom h2 {
+  font-size: 2rem;
+}
+
+.bottom .col_2 img {
+  width: 60%;
 }
