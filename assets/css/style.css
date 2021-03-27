@@ -412,19 +412,21 @@ sezione finale
   background-color: red;
   height: 300px;
 }
-.bottom .col_left {
-  background-color: rgba(34, 12, 238, 0.2);
-  height: 100%;
-}
 
 .bottom .col_right {
-  background-color: rgba(12, 212, 238, 0.2);
   height: 100%;
   padding-left: 15%;
+  padding-top: 10px;
 }
-.col_right img {
+.col_right .cont {
   float: left;
+  height: 50px;
   width: 25%;
-  padding-top: 35px;
-  padding-left: 25px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.cont img {
+  max-width: 100%;
+  vertical-align: middle;
+  padding-left: 20px;
 }
