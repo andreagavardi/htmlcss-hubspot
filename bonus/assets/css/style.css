@@ -77,13 +77,6 @@ p {
   border-radius: 5px;
   font-size: 15px;
 }
-.btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border: 1px solid #f57559;
-  background-color: white;
-  color: #32495b;
-}
-
 .btn_red {
   background-color: #f57559;
   color: white;
@@ -96,10 +89,6 @@ p {
   color: #32495b;
   padding: 10px;
 }
-.btn_empty:hover {
-  background-color: #f57559;
-  color: white;
-}
 .btn_lg {
   font-size: 1.15rem;
   font-weight: 600;
@@ -111,6 +100,30 @@ p {
 }
 .text_right {
   text-align: right;
+}
+/* Bonus Dropdown Menu CSS */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  text-align: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 /****************
@@ -155,9 +168,6 @@ img.search_icon {
   border-right: 1px solid #32495b;
   padding-right: 10px;
   margin-right: 10px;
-}
-#nav-top .btn:hover {
-  box-shadow: 0 0.1rem 0.3rem rgb(0 0 0 / 20%);
 }
 
 /* navar bottom-CSS */
