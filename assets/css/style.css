@@ -514,12 +514,9 @@ footer .row_top .col_4 span {
 footer .row_bottom {
   padding: 40px 0;
 }
-footer .row_bottom .col_2 div:first-child {
-  background-color: #cbd6e2;
-}
+
 footer .row_bottom .col_2 img {
   width: 5.5rem;
-  opacity: 0.75;
 }
 
 footer .col_2 span {
