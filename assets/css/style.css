@@ -517,6 +517,7 @@ footer .row_bottom {
 
 footer .row_bottom .col_2 img {
   width: 5.5rem;
+  filter: opacity(70%);
 }
 
 footer .col_2 span {
@@ -526,4 +527,5 @@ footer .col_2 span {
 }
 footer .text_right a {
   padding-left: 20px;
+  transform: ;
 }
