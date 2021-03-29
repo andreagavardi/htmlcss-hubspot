@@ -14,6 +14,7 @@ h1 {
   font-size: 2.75rem;
 }
 h2 {
+  text-align: center;
   font-weight: 800;
   font-size: 1.75rem;
 }
@@ -57,7 +58,6 @@ p {
   width: 50%;
 }
 .col_4 {
-  text-align: center;
   float: left;
   width: calc(100% / 4);
   padding: 15px 0;
@@ -111,6 +111,7 @@ p {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  /* margin-top: -5px; */
 }
 .dropdown-content a {
   display: block;
@@ -142,17 +143,16 @@ nav a {
 #nav-top {
   background-color: #f4f9fd;
   border-bottom: 2px solid#32495b;
-
-  /* position: fixed;
+  position: fixed;
   width: 100%;
-  top: 0; */
+  top: 0;
+  z-index: 1;
 }
 #nav-top a:not(.btn) {
   text-decoration: none;
   color: #32495b;
   font-weight: 400;
   font-size: 15px;
-  /* padding: 10px 20px; */
 }
 #nav-top .col_2 img {
   width: 15px;
@@ -173,6 +173,10 @@ img.search_icon {
 }
 
 /* navar bottom-CSS */
+
+#nav-bottom {
+  margin-top: 70px;
+}
 
 #nav-bottom .col_2 {
   width: 30%;
@@ -207,7 +211,9 @@ img.search_icon {
   top: 70px;
   width: 36%;
 }
-
+.jumbotron_text p:last-child {
+  font-size: 12px;
+}
 .banner {
   position: absolute;
   bottom: 0;
@@ -274,7 +280,7 @@ Main-CSS
   text-align: center;
   width: 50%;
 }
-.row_top .btn,
+.cubo .row_top .btn,
 .row_bottom .card .btn {
   display: block;
   margin: 10% auto;
@@ -352,7 +358,6 @@ sezione sfondo blu
   padding-bottom: 50px;
 }
 .blu .main_text {
-  text-align: center;
   padding: 40px 0;
 }
 .blu .main_text,
@@ -365,24 +370,29 @@ sezione sfondo blu
 /* colonne */
 
 .blu .col_4 {
+  text-align: center;
   width: calc(100% / 4 - 1px);
 }
-.col_4 img {
+.blu .main_text p {
+  text-align: center;
+}
+.blu .col_4 img {
   height: 25px;
   width: 80px;
 }
-.col_4 h2 {
+.blu .col_4 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   margin: 15px 0;
   line-height: 2.25rem;
 }
-.col_4 span {
+.blu .col_4 span {
   font-size: 12px;
 }
 /* Bordi bianchi colonne */
 
 .blu .row_top .col_4 {
+  text-align: center;
   border-bottom: 1px solid white;
 }
 
@@ -420,10 +430,85 @@ sezione finale
 .bottom .main_text {
   padding-top: 40px;
 }
+.bottom .main_text p:last-child {
+  font-size: 12px;
+}
 .bottom h2 {
+  text-align: left;
   font-size: 2rem;
 }
 
 .bottom .col_2 img {
   width: 60%;
+}
+
+/***************
+Footer 
+****************/
+#footer {
+  background-color: #32495b;
+}
+footer a {
+  text-decoration: none;
+  color: #cbd6e2;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* footer riga superiore */
+
+footer .row_top {
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+}
+footer .row_top .col_4:last-child {
+  width: 100%;
+}
+footer .col_4 {
+  padding: 0 20px;
+}
+footer .col_4 p {
+  display: block;
+  color: #cbd6e2;
+  margin: 0.5rem;
+}
+footer .col_4 p:first-child {
+  color: white;
+  margin-bottom: 1rem;
+}
+footer .btn {
+  background-color: #dadee0;
+  border: 1px solid white;
+  color: #32495b;
+  font-size: 12px;
+  display: block;
+  width: 90%;
+  margin-left: 8px;
+  margin-top: 1rem;
+}
+footer .col_4:last-child p:last-child {
+  margin-bottom: 2rem;
+}
+.col_4 .social_link .fab {
+  color: #cbd6e2;
+  padding: 15px 10px;
+}
+footer .row_top .col_4:last-child {
+  width: 100%;
+  color: #cbd6e2;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+footer .row_top .col_4 span {
+  padding-right: 10px;
+}
+
+/* footer riga inferiore */
+
+footer .row_bottom .col_2 img {
 }
