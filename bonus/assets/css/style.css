@@ -113,6 +113,7 @@ p {
   background-color: white;
   min-width: 160px;
   border: 1px solid #32495b;
+  border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 75px;
@@ -133,19 +134,29 @@ p {
   width: 50px;
   float: left;
 }
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  border-color: #32495b;
+  border: solid transparent;
+  border-bottom-color: white;
+  border-width: 11px;
+  margin-left: -10px;
+  top: -21px;
+  right: 65px;
+  z-index: 1;
+}
 .dropdown-content::after {
   content: "";
-  top: -11px;
-  left: 30%;
-  z-index: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg);
   position: absolute;
-  background-color: white;
-  border-top: 1px solid #32495b;
-  border-left: 1px solid #32495b;
+  right: 66px;
+  top: -21px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-bottom-color: #32495b;
+  z-index: 0;
 }
 
 /****************
@@ -166,6 +177,10 @@ nav a {
   width: 100%;
   top: 0;
   z-index: 1;
+}
+.dropdown-content {
+  top: 55px;
+  right: -51px;
 }
 .dropdown .dropdown-content a {
   line-height: 35px;
@@ -208,6 +223,12 @@ img.search_icon {
 #nav-bottom .row .col_right .dropdown .dropdown-content {
   left: -30px;
   width: 350px;
+}
+#nav-bottom .row .col_right .dropdown .dropdown-content::before {
+  right: 224px;
+}
+#nav-bottom .row .col_right .dropdown .dropdown-content::after {
+  right: 225px;
 }
 #nav-bottom .row .col_right .dropdown .dropdown-content .elements {
   line-height: 25px;
