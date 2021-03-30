@@ -77,6 +77,12 @@ p {
   border-radius: 5px;
   font-size: 15px;
 }
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #f57559;
+  background-color: white;
+  color: #32495b;
+}
 .btn_red {
   background-color: #f57559;
   color: white;
@@ -88,6 +94,10 @@ p {
   background-color: white;
   color: #32495b;
   padding: 10px;
+}
+.btn_empty:hover {
+  background-color: #f57559;
+  color: white;
 }
 .btn_lg {
   font-size: 1.15rem;
@@ -211,7 +221,9 @@ img.search_icon {
   padding-right: 10px;
   margin-right: 10px;
 }
-
+#nav-top .btn:hover {
+  box-shadow: 0 0.1rem 0.3rem rgb(0 0 0 / 20%);
+}
 /* navar bottom-CSS */
 
 #nav-bottom {
