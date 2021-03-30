@@ -305,7 +305,7 @@ Main-CSS
   background-color: #f4f9fd;
 }
 .cubo .container {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .cubo .main_text {
